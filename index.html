@@ -8,6 +8,7 @@
 </head>
 <body>
   <div id="overlay"></div>
+
   <nav class="navbar">
     <div class="logo">HANYANG ENG USA INC.</div>
     <div class="dropdown">
@@ -23,7 +24,7 @@
   <main class="form-container">
     <h2>Gas Entry Form</h2>
     <form id="gasForm">
-      <label>Customer #</label>
+      <label for="customer">Customer #</label>
       <select id="customer" required>
         <option value="49899">49899</option>
         <option value="E8070">E8070</option>
@@ -31,25 +32,24 @@
         <option value="49895">49895</option>
       </select>
 
-      <label>Ship To</label>
+      <label for="shipTo">Ship To</label>
       <select id="shipTo" required>
         <option value="20 Branton Rd SE, Cartersville GA 30121">20 Branton Rd SE</option>
-        <option value="100 Qcells Pkwy, Building 110, White GA 30184">100 Qcells Pkwy B110</option>
-        <option value="1189 Joe Frank Harris Pkwy, Cartersville GA 30120">1189 Joe Frank Harris</option>
-        <option value="100 Qcells Pkwy, Building 300, White GA 30184">100 Qcells Pkwy B300</option>
+        <option value="100 Qcells Pkwy, Building 110, White GA 30184">100 Qcells Pkwy, B110</option>
+        <option value="1189 Joe Frank Harris Pkwy, Cartersville GA 30120">1189 Joe Frank Harris Pkwy</option>
+        <option value="100 Qcells Pkwy, Building 300, White GA 30184">100 Qcells Pkwy, B300</option>
       </select>
 
-      <label>Invoice #</label>
+      <label for="invoiceNumber">Invoice #</label>
       <input type="text" id="invoiceNumber" required />
 
-      <label>Order Date</label>
+      <label for="orderDate">Order Date</label>
       <input type="date" id="orderDate" required />
 
       <div id="itemSection"></div>
-
       <button type="button" id="addItemBtn">+ Add Another Item</button>
 
-      <label>Delivered Date</label>
+      <label for="deliveredDate">Delivered Date</label>
       <input type="date" id="deliveredDate" required />
 
       <button type="submit">Submit</button>
