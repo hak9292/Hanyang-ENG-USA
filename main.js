@@ -16,7 +16,7 @@ function addItemRow() {
     <label>Item #</label>
     <input type="text" name="itemNumber" required />
     <label>Description</label>
-    <input type="text" name="description" readonly value="Auto-filled desc" />
+    <input type="text" name="description" readonly value="Autofilled Description" />
     <label>SHP</label>
     <input type="number" name="shp" placeholder="0" />
     <label>RTN</label>
